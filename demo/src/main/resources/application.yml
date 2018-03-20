@@ -1,0 +1,19 @@
+server:
+  port: 8012
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/fhblog?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: anywhere
+
+
+mybatis:
+  type-aliases-package: com.hehe.fhblog.model
+  mapper-locations: classpath*:mapper/*Mapper.xml
+
+email:
+  host: smtp.163.com
+  username: m15854026443@163.com
+  password: xxxxxxxxxx
